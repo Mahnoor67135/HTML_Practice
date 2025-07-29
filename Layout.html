@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+    <head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header{
+        background-color: #666;
+        padding: 50px;
+        text-align: center;
+        font-size: 40px;
+    color: white;
+    }
+nav{
+    background-color: #ccc;
+    width: 30%;
+    height: 400px;
+    padding: 20px;
+    float: left;
+}
+nav ul{
+      list-style-type: none;
+      padding: 0;
+}
+article{
+    background-color: azure;
+    width: 70%;
+    height: 300px;
+    padding: 10%;
+    float: left;
+}
+section::after {
+    display: table; 
+    content: "";
+    clear: both;
+}
+footer{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+@media (max-widht: 600px){
+nav, article{
+    width: 100%;
+    height: :auto;
+}
+}
+</style>
+    </head>
+       <body>
+        <h1>CSS Layout Float</h1>
+        <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+        <br>
+      <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)
+</p>
+<header>Cities</header>
+<section>
+    <nav>
+        <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+    </nav>
+    <article>
+        <h1>London</h1>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+
+Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    </article>
+</section>
+<footer>
+    <p>Footer</p>
+</footer>
+    </body>
+    </html>
